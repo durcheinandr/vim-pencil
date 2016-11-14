@@ -409,8 +409,8 @@ fun! pencil#init(...) abort
     nn <buffer> <silent> k gk
     vn <buffer> <silent> j gj
     vn <buffer> <silent> k gk
-    no <buffer> <silent> <Up>   gk
-    no <buffer> <silent> <Down> gj
+    " no <buffer> <silent> <Up>   gk
+    " no <buffer> <silent> <Down> gj
 
     " preserve behavior of up/down keys in popups
     call s:imap(1, '<Up>'  , '<C-o>g<Up>'  )
@@ -420,11 +420,11 @@ fun! pencil#init(...) abort
     sil! nun <buffer> k
     sil! vu  <buffer> j
     sil! vu  <buffer> k
-    sil! unm <buffer> <Up>
-    sil! unm <buffer> <Down>
+    " sil! unm <buffer> <Up>
+    " sil! unm <buffer> <Down>
 
-    sil! iu <buffer> <Up>
-    sil! iu <buffer> <Down>
+    " sil! iu <buffer> <Up>
+    " sil! iu <buffer> <Down>
   en
 
   " set undo points around common punctuation,
